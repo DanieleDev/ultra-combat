@@ -55,19 +55,19 @@ public class Luta {
 				this.desafiado.empatarLuta();
 				break;
 			case 1:
-				System.out.println("Vitória do " + this.desafiado.getNome());
+				System.out.println("Vitï¿½ria do " + this.desafiado.getNome());
 				this.desafiado.ganharLuta();
 				this.desafiante.perderLuta();
 				break;
 			case 2:	
-				System.out.println("Vitória do "  + this.desafiante.getNome());
+				System.out.println("Vitï¿½ria do "  + this.desafiante.getNome());
 				this.desafiado.perderLuta();
 				this.desafiante.ganharLuta();
 				break;
 			}
 			System.out.println("==========================================");	
 		}else{
-			System.out.println("A luta não pode acontecer!");
+			System.out.println("A luta nÃ£o pode acontecer!");
 		}
 	}
 	
@@ -88,12 +88,12 @@ public class Luta {
 				this.desafiado.empatarLuta();
 				break;
 			case 1:
-				System.out.println("Vitória do " + this.desafiado.getNome());
+				System.out.println("Vitï¿½ria do " + this.desafiado.getNome());
 				this.desafiado.ganharLuta();
 				this.desafiante.perderLuta();
 				break;
 			case 2:	
-				System.out.println("Vitória do "  + this.desafiante.getNome());
+				System.out.println("Vitï¿½ria do "  + this.desafiante.getNome());
 				this.desafiado.perderLuta();
 				this.desafiante.ganharLuta();
 				break;
@@ -101,7 +101,7 @@ public class Luta {
 			System.out.println("==========================================");	
 		
 		}else{
-			System.out.println("A luta não pode acontecer!");
+			System.out.println("A luta nÃ£o pode acontecer!");
 		}
 	}
 

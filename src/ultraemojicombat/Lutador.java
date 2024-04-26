@@ -17,40 +17,48 @@ public class Lutador {
 	
 	
 	public void apresentarHomens () {
-
-		System.out.println("--------------------------------------------------------");
-		System.out.println("Apresentamos o lutador " + this.getHomem() +  this.getNome());
-		System.out.println("Diretamente de " + this.getNacionalidade());
-		System.out.println("Com " + this.getIdade() + " anos e " + this.getAltura() + " de altura");
-		System.out.println("Pesando " + this.getPeso() + "Kg");
-		System.out.println(this.getVitorias() + " Vitórias ");
-		System.out.println(this.getDerrotas() + " derrotas e ");
-		System.out.println(this.getEmpates() + " empates!");
+		if (this.categoriaMasculina != this.categoriaFeminina){
+			System.out.println("--------------------------------------------------------");
+			System.out.println("Apresentamos o lutador " + this.getHomem() +  this.getNome());
+			System.out.println("Diretamente de " + this.getNacionalidade());
+			System.out.println("Com " + this.getIdade() + " anos e " + this.getAltura() + " de altura");
+			System.out.println("Pesando " + this.getPeso() + "Kg");
+			System.out.println(this.getVitorias() + " Vitï¿½rias ");
+			System.out.println(this.getDerrotas() + " derrotas e ");
+			System.out.println(this.getEmpates() + " empates!");
+		}else {
+			System.out.println("");
+		}
 	}
 	
 	public void statusHomens() {
-		System.out.println("------ Status ------");
-		System.out.println(this.getNome() + " é um peso " + getCategoriaMasculina());
-		System.out.println("Ganhou " + this.getVitorias() + " veses");
-		System.out.println("Perdeu " + this.getDerrotas() + " veses");
-		System.out.println("Empatou " + this.getEmpates() + " veses");
+		
+			System.out.println("------ STATUS ------");
+			System.out.println(this.getNome() + " ï¿½ um peso " + getCategoriaMasculina());
+			System.out.println("Ganhou " + this.getVitorias() + " veses");
+			System.out.println("Perdeu " + this.getDerrotas() + " veses");
+			System.out.println("Empatou " + this.getEmpates() + " veses");
+		
 	}
 	
 	public void apresentarMulheres () {
-		
-		System.out.println("------------------------------------------------------------");
-		System.out.println("Apresentamos a Lutadora " +  this.getNome());
-		System.out.println("Diretamente de " + this.getNacionalidade());
-		System.out.println("Com " + this.getIdade() + " anos e " + this.getAltura() + " de altura");
-		System.out.println("Pesando " + this.getPeso() + "Kg");
-		System.out.println(this.getVitorias() + " Vitórias ");
-		System.out.println(this.getDerrotas() + " derrotas e ");
-		System.out.println(this.getEmpates() + " empates!");
+		if (getCategoriaFeminina().equals(getCategoriaFeminina())){
+			System.out.println("------------------------------------------------------------");
+			System.out.println("Apresentamos a Lutadora " +  this.getNome());
+			System.out.println("Diretamente de " + this.getNacionalidade());
+			System.out.println("Com " + this.getIdade() + " anos e " + this.getAltura() + " de altura");
+			System.out.println("Pesando " + this.getPeso() + "Kg");
+			System.out.println(this.getVitorias() + " Vitï¿½rias ");
+			System.out.println(this.getDerrotas() + " derrotas e ");
+			System.out.println(this.getEmpates() + " empates!");
+		}else {
+			System.out.println(" ");
+		}
 	}
 	
 	public void statusMulheres() {
-		System.out.println("------ Status ------");
-		System.out.println(this.getNome() + " é um peso " + getCategoriaFeminina());
+		System.out.println("------ STATUS ------");
+		System.out.println(this.getNome() + " ï¿½ um peso " + getCategoriaFeminina());
 		System.out.println("Ganhou " + this.getVitorias() + " veses");
 		System.out.println("Perdeu " + this.getDerrotas() + " veses");
 		System.out.println("Empatou " + this.getEmpates() + " veses");
@@ -138,15 +146,15 @@ public class Lutador {
 	private void setCategoriaMasculina() {
 		
 		if(this.peso < 52.2 ) {
-			this.categoriaMasculina = "Inválido";
+			this.categoriaMasculina = "InvÃ¡lido";
 		}else if (this.peso <= 70.3) {
 			this.categoriaMasculina = "Leve";
 		}else if (this.peso <= 83.9) {
-			this.categoriaMasculina = "Médio"; 
+			this.categoriaMasculina = "MÃ©dio"; 
 		} else if (this.peso <= 120.2) {
 			this.categoriaMasculina ="Pesado";
 		}else { 
-			this.categoriaMasculina = "Inválido";
+			this.categoriaMasculina = "InvÃ¡lido";
 		}
 	}
 	
@@ -159,15 +167,15 @@ public class Lutador {
 	
 		
 		if(this.peso < 50.2 ) {
-			this.categoriaFeminina = "Inválido";
+			this.categoriaFeminina = "InvÃ¡lido";
 		}else if (this.peso <= 62.2) {
 			this.categoriaFeminina = "Leve";
 		}else if (this.peso <= 73.9) {
-			this.categoriaFeminina = "Médio"; 
+			this.categoriaFeminina = "MÃ¡dio"; 
 		} else if (this.peso <= 100.2) {
 			this.categoriaFeminina ="Pesado";
 		}else { 
-			this.categoriaFeminina = "Inválido";
+			this.categoriaFeminina = "InvÃ¡lido";
 		}
 	}
 	
